@@ -4,6 +4,22 @@ for (let i = 1; i <= 1000; i++) {
 }
 
 exports.linearSearch = function(valueToFind, arrayToSearchThrough) {
-
+    for (let i = 0; i < arrayToSearchThrough.length; i++) {
+        if (arrayToSearchThrough[i] === valueToFind) {
+            return i
+        }
+    }
 };
+
+
+
+exports.linearSearchGlobal = function(valueToFind, arrayToSearchThrough) {
+    let answer = []
+    for (let i = 0; i < arrayToSearchThrough.length; i++) {
+        if (arrayToSearchThrough[i] === valueToFind) {
+            answer.push(i)
+        }
+    } return answer 
+};
+
 
